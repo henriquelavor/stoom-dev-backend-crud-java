@@ -1,0 +1,1 @@
+INSERT INTO tb_address(street_Name, number, complement, neighbourhood, city, state, country, zipcode, latitude, longitude) VALUES('R. Amapá', '470', 'casa', 'mercantil extra', 'Boa Vista', 'Roraima', 'Brasil', '69305-520', 2.849742780291502, -60.66751701970849)

@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "12afcd9a-9885-45ea-9f53-bca27ce0ddf0",
+		"name": "desafioStoom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Addresses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/address/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"address",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"streetName\" : \"Rua Antonio Augusto martins, 217, Bairro São francisco\",\r\n\t\"number\" : \"127\",\r\n    \"complement\" : \"casa\",\r\n    \"neighbourhood\" : \"atras da vivo\",\r\n\t \"city\" : \"Boa Vista\",\r\n\t \"state\" : \"Roraima\",\r\n\t \"country\" : \"Brasil\",\r\n\t \"zipcode\" : \"69305-270\",\r\n\t \"latitude\" : \"\",\r\n     \"longitude\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"streetName\" : \"Rua Antônio Augusto Martins\",\r\n\t\"number\" : \"1212121\",\r\n    \"complement\" : \"casa\",\r\n    \"neighbourhood\" : \"atras da loja da vivo\",\r\n\t \"city\" : \"Boa Vista\",\r\n\t \"state\" : \"Roraima\",\r\n\t \"country\" : \"Brasil\",\r\n\t \"zipcode\" : \"69305-270\",\r\n\t \"latitude\" : \"\",\r\n     \"longitude\" : \"-60.6726528802915\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/address/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"address",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"streetName\" : \"Rua Antônio Augusto Martins\",\r\n\t\"number\" : \"\",\r\n    \"complement\" : \"casa\",\r\n    \"neighbourhood\" : \"a vivo\",\r\n\t \"city\" : \"Boa Vista\",\r\n\t \"state\" : \"Roraima\",\r\n\t \"country\" : \"Brasil\",\r\n\t \"zipcode\" : \"69305-270\",\r\n\t \"latitude\" : \"2.829825619708498\",\r\n     \"longitude\" : \"-60.6726528802915\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/address/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"address",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
